@@ -1,0 +1,145 @@
+/* VARIABLES DE COLOR */
+:root {
+    --bg-gradient: linear-gradient(180deg, #020617 0%, #0c0a3e 100%);
+    --mint: #2dd4bf;
+    --white: #ffffff;
+    --error-red: #ff4d4d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: var(--bg-gradient);
+    min-height: 100vh;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 6%;
+}
+
+.brand { font-weight: bold; font-size: 1.2rem; }
+
+.nav-links a {
+    color: var(--white);
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 0.9rem;
+}
+
+.btn-login-nav {
+    background: var(--mint);
+    color: #000;
+    padding: 8px 30px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+/* CONTENIDO PRINCIPAL */
+.main-content, .login-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+/* TARJETA INICIO */
+.hero-card {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    border: 4px solid #1e293b;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.hero-img { width: 100%; display: block; filter: brightness(0.8); }
+
+.hero-text {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 40px;
+    background: linear-gradient(transparent, rgba(0,0,0,0.8));
+    text-align: center;
+}
+
+/* FORMULARIO LOGIN */
+.form-container { width: 90%; max-width: 850px; }
+
+.input-block {
+    background-color: var(--mint);
+    padding: 15px 45px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.input-block label { font-size: 2.2rem; font-weight: bold; min-width: 280px; }
+
+.input-block input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--white);
+    font-size: 1.6rem;
+    width: 100%;
+}
+
+.decoration-bar {
+    height: 20px;
+    background-color: var(--mint);
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.button-row { display: flex; gap: 15px; }
+
+.btn-action {
+    background-color: var(--mint);
+    border: none;
+    border-radius: 15px;
+    color: var(--white);
+    padding: 20px;
+    font-weight: bold;
+    font-size: 1rem;
+    flex: 1;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+/* MENSAJE DE ERROR ELEGANTE */
+.status-msg {
+    text-align: center;
+    margin-top: 40px;      /* Espacio prudente para elegancia */
+    font-size: 1.2rem;
+    font-weight: bold;
+    width: 100%;
+    display: block;
+    min-height: 1.5rem;
+}
+
+/* FOOTER */
+.main-footer {
+    padding: 20px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.main-footer p { font-size: 0.9rem; color: var(--mint); font-weight: bold; }
