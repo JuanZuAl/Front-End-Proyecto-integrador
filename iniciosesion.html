@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Gestión Académica</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="brand">INSTITUCION EDUCATIVA</div>
+        <nav class="nav-links">
+            <a href="index.html">Inicio</a>
+            <a href="#">Historia</a>
+            <a href="#">Programas</a>
+            <a href="#">Infraestructura</a>
+        </nav>
+        <a href="bienvenido.html" class="btn-login-nav">Log in</a>
+    </header>
+
+    <main class="login-wrapper">
+        <div class="form-container">
+            <div class="input-block">
+                <label>Usuario:</label>
+                <input type="text" id="email" placeholder="Ingrese usuario">
+            </div>
+
+            <div class="input-block">
+                <label>Contraseña:</label>
+                <input type="password" id="password" placeholder="Ingrese Contraseña">
+            </div>
+
+            <div class="decoration-bar"></div>
+
+            <div class="button-row">
+                <button id="btn-login" class="btn-action">ACCEDER</button>
+                <button class="btn-action">SOPORTE</button>
+                <button class="btn-action small-text">OLVIDÉ MI<br>CONTRASEÑA</button>
+            </div>
+
+            <div id="mensaje-estado" class="status-msg"></div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <p>2026 | Elaborado por Equipo Integrador</p>
+    </footer>
+
+    <script src="scrpt.js"></script>
+</body>
+</html>

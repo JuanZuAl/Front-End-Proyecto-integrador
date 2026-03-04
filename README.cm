@@ -1,0 +1,64 @@
+MANUAL DE SISTEMA DE GESTIÒN ACADEMICA - INSTITUCUÒN EDUCATIVA 
+
+Este proyecto es una plataforma web desarrollada para el Proyecto Integrador 2026. 
+El sistema simula un entorno escolar seguro donde se valida la identidad de los usuarios antes de permitir el acceso al panel de gestión de notas.
+
+ FUNCIONALIDADES PRINCIPALES:
+Portal Institucional: Página de inicio con navegación y acceso al área privada.
+
+Autenticación por Arreglos: El sistema no solo valida un usuario,
+ sino que recorre una lista de cuentas registradas.
+
+Seguridad y Bloqueo: Control estricto de intentos (Máximo 3).
+ Si se agotan, el botón de acceso se deshabilita automáticamente.
+
+Diseño Profesional: Interfaz Dark Mode con acentos en verde menta (#2dd4bf),
+ diseñada para una experiencia de usuario moderna y limpia.
+
+Tecnologías Utilizadas
+HTML: Estructura semántica de las páginas,
+ (index.html, iniciosesion.html, bienvenido.html).
+
+CSS3: Estilos globales, variables nativas (:root) y diseño responsivo con Flexbox.
+
+JavaScript:  Lógica de programación avanzada,
+ uso de estructuras iterativas y manipulación del DOM.
+
+Explicación Técnica (Lógica de Programación)
+Para cumplir con los estándares de programación, se implementaron los siguientes conceptos clave:
+
+1. Estructuras de Datos (Arrays y Objetos)
+En lugar de una variable simple, utilizamos un Array de Objetos (usuariosRegistrados). Esto permite que el sistema sea escalable,
+ pudiendo almacenar múltiples usuarios con sus respectivas claves de forma organizada.
+
+2. Bucle Iterativo (for)
+Es el corazón de la validación. El sistema utiliza un ciclo for para recorrer cada posición del arreglo:
+
+Funcionamiento: El bucle compara el correo y la clave ingresados contra cada registro de la lista.
+
+Sentencia break: Se incluyó para optimizar el rendimiento; 
+una vez encontrada la coincidencia, el ciclo se detiene inmediatamente.
+
+3. Operadores Lógicos y Comparación
+Operador AND (&&): Utilizado dentro del bucle para asegurar que tanto el usuario 
+como la contraseña sean correctos simultáneamente.
+
+Operador de Identidad (===): Garantiza que la comparación sea exacta en valor y tipo de dato.
+
+4. Variables de Estado
+let accesoConcedido: Una variable booleana que actúa como "bandera" (flag).
+ Inicia en false y solo cambia a true si el bucle for encuentra una coincidencia válida.
+
+ ESTRUCTURA DEL PROYECTO
+
+ index.html          
+iniciosesion.html   
+bienvenido.html   
+styles.css          
+scrpt.js       
+
+Elaborado por:
+ Erica Marcela Avendaño 
+ Juan Alberto Zuluaga 
+ Kevin
+ Emanuel 
