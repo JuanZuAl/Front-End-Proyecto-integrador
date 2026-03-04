@@ -45,7 +45,11 @@ como la contraseña sean correctos simultáneamente.
 
 Operador de Identidad (===): Garantiza que la comparación sea exacta en valor y tipo de dato.
 
-4. Variables de Estado
+4. Usuarios y contraseñas
+usuario: erica@gruporoldan.com.co, clave: 2146
+usuario: profesor@cesde.edu.co, clave: 1234
+
+5. Variables de Estado
 let accesoConcedido: Una variable booleana que actúa como "bandera" (flag).
  Inicia en false y solo cambia a true si el bucle for encuentra una coincidencia válida.
 
